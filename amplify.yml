@@ -5,12 +5,11 @@ frontend:
       commands:
         - wget https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_Linux-64bit.tar.gz
         - tar -xf hugo_extended_0.124.1_Linux-64bit.tar.gz
-        - mv hugo /usr/local/bin/
         - mkdir -p themes
         - git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
     build:
       commands:
-        - hugo
+        - ./hugo
   artifacts:
     baseDirectory: public
     files:
