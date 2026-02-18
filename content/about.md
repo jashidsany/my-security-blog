@@ -3,7 +3,7 @@ title: "About"
 layout: "single"
 ---
 
-## Hey, I'm Jashid 👋
+## Hey, I'm Jashid
 
 I'm a security researcher and malware developer diving deep into offensive security, malware development, and Windows internals.
 
