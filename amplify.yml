@@ -6,7 +6,7 @@ frontend:
         - wget https://github.com/gohugoio/hugo/releases/download/v0.124.1/hugo_extended_0.124.1_Linux-64bit.tar.gz
         - tar -xf hugo_extended_0.124.1_Linux-64bit.tar.gz
         - mkdir -p themes
-        - git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+        - git clone https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
     build:
       commands:
         - ./hugo
