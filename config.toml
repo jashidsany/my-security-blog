@@ -12,8 +12,8 @@ theme = "PaperMod"
   showCodeCopyButtons = true
 
   [params.homeInfoParams]
-    Title = "Hey, I'm Jashid 👋"
-    Content = "Security enthusiast exploring malware development, Windows internals, and offensive security. I break things to understand how they work."
+    Title = "Hey, I'm Jashid"
+    Content = "I'm a security researcher and malware developer diving deep into offensive security, malware development, and Windows internals."
 
   [[params.socialIcons]]
     name = "github"
