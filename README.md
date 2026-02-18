@@ -2,7 +2,7 @@
 
 Personal blog documenting my journey in offensive security, malware development, and Windows internals.
 
-**Live site:** [https://your-amplify-url.amplifyapp.com](https://your-amplify-url.amplifyapp.com)
+**Live site:** [https://your-amplify-url.amplifyapp.com](https://www.jashidsany.com/)
 
 ## Topics
 
