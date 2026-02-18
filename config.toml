@@ -1,0 +1,29 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "My Security Blog"
+theme = "terminal"
+
+[params]
+  themeColor = "green"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "My Security Blog"
+    subtitle = "Malware Development & Windows Internals"
+    keywords = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
