@@ -7,7 +7,7 @@ description: "A deep dive into Windows PE file structure. Learn how to parse DOS
 
 ## Introduction
 
-A PE (Portable Executable) file is the format Windows uses for executables (.exe), DLLs (.dll), and other binary files. If you want to understand how Windows works under the hood — whether for malware analysis, reverse engineering, or offensive security — understanding PE structure is essential.
+A PE (Portable Executable) file is the format Windows uses for executables (.exe), DLLs (.dll), and other binary files. If you want to understand how Windows works under the hood, whether for malware analysis, reverse engineering, or offensive security, understanding PE structure is essential.
 
 In this post, I'll walk through building a PE parser from scratch in C, explaining each component along the way.
 
