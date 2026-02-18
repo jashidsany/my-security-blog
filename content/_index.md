@@ -2,19 +2,35 @@
 title: "Home"
 ---
 
-# Welcome
+# Hey, I'm Jashid 👋
 
-I write about malware development, Windows internals, and offensive security.
+I'm a security enthusiast diving deep into the world of offensive security, malware development, and Windows internals. This blog documents my learning journey — breaking things down so I (and hopefully you) can understand how they work under the hood.
 
-## About Me
+---
 
-I'm learning offensive security and documenting my journey. Here you'll find:
+## What I Write About
 
-- PE file parsing
-- Process injection techniques
-- Shellcode development
-- Windows API internals
+🔴 **Malware Development** — Building tools to understand how malware works, from shellcode loaders to process injection techniques.
 
-## Projects
+🔴 **Windows Internals** — Exploring PE file structures, the Windows API, memory management, and how the OS really operates.
 
-Check out my [GitHub](https://github.com/jashidsany) for code.
+🔴 **Offensive Security** — Red team techniques, evasion methods, and practical security research.
+
+---
+
+## Recent Projects
+
+- **[PE Parser](https://github.com/jashidsany/pe-parser)** — A Windows PE file parser written in C. Parses DOS headers, NT headers, and section headers.
+
+- **More coming soon...**
+
+---
+
+## Let's Connect
+
+- **GitHub:** [github.com/jashidsany](https://github.com/jashidsany)
+- **LinkedIn:** [linkedin.com/in/jashidsany](https://linkedin.com/in/jashidsany)
+
+---
+
+*"The best way to learn security is to break things and understand why they broke."*
