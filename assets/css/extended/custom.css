@@ -1,0 +1,25 @@
+:root {
+    --primary: #ff4444;
+    --secondary: #ff6666;
+}
+
+a {
+    color: #ff4444;
+}
+
+a:hover {
+    color: #ff6666;
+}
+
+.post-title {
+    color: #ff4444;
+}
+
+code {
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.highlight {
+    background: #0d0d0d !important;
+}
