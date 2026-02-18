@@ -1,29 +1,45 @@
-baseURL = "/"
+baseURL = "https://jashidsany.com/"
 languageCode = "en-us"
-title = "My Security Blog"
-theme = "terminal"
+title = "Jashid Sany"
+theme = "PaperMod"
 
 [params]
-  themeColor = "green"
-  showMenuItems = 2
-  fullWidthTheme = false
-  centerTheme = true
+  defaultTheme = "dark"
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  homeInfoParams.Title = "Welcome"
+  homeInfoParams.Content = "Security researcher exploring malware development, Windows internals, and offensive security."
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "My Security Blog"
-    subtitle = "Malware Development & Windows Internals"
-    keywords = ""
-    menuMore = "Show more"
-    readMore = "Read more"
+  [params.profileMode]
+    enabled = false
 
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
+  # Red accent color
+  [params.assets]
+    disableFingerprinting = false
 
-[[menu.main]]
-  name = "Posts"
-  url = "/posts/"
-  weight = 2
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/yourusername"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    codeFences = true
+    guessSyntax = true
