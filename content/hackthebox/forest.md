@@ -10,9 +10,9 @@ tags: ["hackthebox", "windows", "active-directory", "kerberos", "dcsync", "asrep
 
 Forest is a Windows Active Directory Domain Controller on HackTheBox. This box demonstrates common AD misconfigurations and attack paths including AS-REP Roasting, privileged group abuse, and DCSync attacks.
 
-**Difficulty:** Easy  
-**OS:** Windows  
-**Skills:** AD Enumeration, AS-REP Roasting, Privilege Escalation, DCSync
+- **Difficulty:** Easy  
+- **OS:** Windows  
+- **Skills:** AD Enumeration, AS-REP Roasting, Privilege Escalation, DCSync
 
 ---
 
