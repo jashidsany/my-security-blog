@@ -172,14 +172,6 @@ nt authority\system
 
 ---
 
-## Flags
-```cmd
-type C:\Users\babis\Desktop\user.txt
-type C:\Users\Administrator\Desktop\root.txt
-```
-
----
-
 ## Attack Path Summary
 ```bash
 Nmap (ports 21, 80)
