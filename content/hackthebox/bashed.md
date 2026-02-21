@@ -146,14 +146,6 @@ root
 
 ---
 
-## Flags
-```bash
-cat /home/arrexel/user.txt
-cat /root/root.txt
-```
-
----
-
 ## Attack Path Summary
 ```bash
 Port 80 (HTTP)
