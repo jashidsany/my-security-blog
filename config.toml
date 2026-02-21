@@ -29,13 +29,21 @@ theme = "PaperMod"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
+    name = "HackTheBox"
+    url = "/categories/hackthebox/"
     weight = 2
+  [[menu.main]]
+    name = "Malware Dev"
+    url = "/categories/malware-development/"
+    weight = 3
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 4
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -46,6 +54,3 @@ theme = "PaperMod"
     lineNos = false
     codeFences = true
     guessSyntax = true
-
-[taxonomies]
-  tag = "tags"
