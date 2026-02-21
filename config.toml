@@ -32,12 +32,12 @@ theme = "PaperMod"
   [[menu.main]]
     identifier = "hackthebox"
     name = "HackTheBox"
-    url = "/categories/hackthebox/"
+    url = "/hackthebox/"
     weight = 2
   [[menu.main]]
     identifier = "malwaredev"
     name = "Malware Dev"
-    url = "/categories/malware-development/"
+    url = "/malware-dev/"
     weight = 3
   [[menu.main]]
     identifier = "about"
