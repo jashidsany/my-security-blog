@@ -107,7 +107,7 @@ We catch a shell as `iis apppool\web`.
 ```cmd
 whoami /priv
 ```
-```
+```cmd
 Privilege Name                Description                               State
 ============================= ========================================= ========
 SeImpersonatePrivilege        Impersonate a client after authentication Enabled
