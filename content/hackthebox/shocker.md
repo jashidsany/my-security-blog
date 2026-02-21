@@ -10,9 +10,9 @@ tags: ["hackthebox", "linux", "shellshock", "cgi", "sudo", "privesc"]
 
 Shocker is a Linux machine on HackTheBox that teaches the infamous Shellshock vulnerability (CVE-2014-6271). The box name itself is a hint at the attack vector. We'll exploit a vulnerable CGI script to gain initial access, then abuse sudo permissions on Perl to escalate to root.
 
-**Difficulty:** Easy  
-**OS:** Linux  
-**Skills:** CGI enumeration, Shellshock exploitation, sudo abuse
+- **Difficulty:** Easy  
+- **OS:** Linux  
+- **Skills:** CGI enumeration, Shellshock exploitation, sudo abuse
 
 ---
 
