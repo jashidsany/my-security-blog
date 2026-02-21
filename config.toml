@@ -10,6 +10,7 @@ theme = "PaperMod"
   showPostNavLinks = true
   showBreadCrumbs = true
   showCodeCopyButtons = true
+  mainSections = ["hackthebox", "malware-dev"]
 
   [params.homeInfoParams]
     Title = "Hey, I'm Jashid"
@@ -58,7 +59,3 @@ theme = "PaperMod"
     lineNos = false
     codeFences = true
     guessSyntax = true
-
-# This makes all sections show on home page
-[params]
-  mainSections = ["hackthebox", "malware-dev"]
