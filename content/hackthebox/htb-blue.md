@@ -11,9 +11,9 @@ tags: ["hackthebox", "windows", "eternalblue", "ms17-010"]
 
 Blue is a Windows machine on HackTheBox that's vulnerable to **EternalBlue (MS17-010)** the same exploit used in the devastating WannaCry ransomware attack in 2017. This box is a great introduction to exploiting SMB vulnerabilities and understanding why patching is critical.
 
-**Difficulty:** Easy  
-**OS:** Windows  
-**Skills:** SMB enumeration, EternalBlue exploitation
+- **Difficulty:** Easy  
+- **OS:** Windows  
+- **Skills:** SMB enumeration, EternalBlue exploitation
 
 ---
 
