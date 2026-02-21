@@ -120,22 +120,6 @@ nt authority\system
 
 ---
 
-## Capturing the Flags
-
-### User Flag
-```bash
-cd C:\Users
-dir /s user.txt
-type C:\Users\haris\Desktop\user.txt
-```
-
-### Root Flag
-```bash
-type C:\Users\Administrator\Desktop\root.txt
-```
-
----
-
 ## Alternative: Manual Exploitation (No Metasploit)
 
 For OSCP practice, I also exploited this manually using AutoBlue:
