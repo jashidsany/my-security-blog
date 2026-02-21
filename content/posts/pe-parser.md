@@ -2,7 +2,9 @@
 title: "Building a PE Parser in C"
 date: 2026-02-18
 draft: false
-description: "A deep dive into Windows PE file structure. Learn how to parse DOS headers, NT headers, and sections by building a parser from scratch in C."
+description: "A deep dive into Windows PE file structure..."
+categories: ["Malware Development"]
+tags: ["windows", "c", "pe-file", "malware-dev"]
 ---
 
 ## Introduction
