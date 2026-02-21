@@ -11,7 +11,7 @@ tags: ["hackthebox", "linux", "web", "cron", "privesc"]
 Bashed is a Linux machine on HackTheBox that demonstrates the dangers of leaving development tools exposed on production servers. We'll discover an exposed web shell, then escalate privileges through sudo misconfigurations and a root cron job.
 
 **Difficulty:** Easy  
-**OS:** Ubuntu 16.04  
+**OS:** Linux 
 **Skills:** Web enumeration, sudo abuse, cron job exploitation
 
 ---
