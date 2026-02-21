@@ -46,3 +46,6 @@ theme = "PaperMod"
     lineNos = false
     codeFences = true
     guessSyntax = true
+
+[taxonomies]
+  tag = "tags"
