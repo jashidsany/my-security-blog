@@ -2,8 +2,9 @@
 title: "HackTheBox: Blue - EternalBlue (MS17-010) Exploitation"
 date: 2026-02-20
 draft: false
-description: "Walkthrough of the HackTheBox Blue machine, exploiting the infamous EternalBlue vulnerability (MS17-010) to gain SYSTEM access on Windows 7."
-tags: ["hackthebox", "windows", "eternalblue", "ms17-010", "smb"]
+description: "Walkthrough of the HackTheBox Blue machine..."
+categories: ["HackTheBox"]
+tags: ["hackthebox", "windows", "eternalblue", "ms17-010"]
 ---
 
 ## Introduction
