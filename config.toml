@@ -13,7 +13,7 @@ theme = "PaperMod"
 
   [params.homeInfoParams]
     Title = "Hey, I'm Jashid"
-    Content = "I'm a security researcher and malware developer diving deep into offensive security, malware development, and Windows internals."
+    Content = "I’m a security researcher and malware developer diving deep into offensive security, malware development, and Windows internals."
 
   [[params.socialIcons]]
     name = "github"
@@ -25,18 +25,22 @@ theme = "PaperMod"
 
 [menu]
   [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
   [[menu.main]]
+    identifier = "hackthebox"
     name = "HackTheBox"
     url = "/categories/hackthebox/"
     weight = 2
   [[menu.main]]
+    identifier = "malwaredev"
     name = "Malware Dev"
     url = "/categories/malware-development/"
     weight = 3
   [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "/about/"
     weight = 4
