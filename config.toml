@@ -41,6 +41,11 @@ theme = "PaperMod"
     url = "/malware-dev/"
     weight = 3
   [[menu.main]]
+    identifier = "tools"
+    name = "Tools"
+    url = "/tools/"
+    weight = 4
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
