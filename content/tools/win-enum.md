@@ -150,16 +150,6 @@ hashcat -m 18200 asrep.txt /usr/share/wordlists/rockyou.txt
 
 ---
 
-## Future Improvements
-
-- Add Kerberoasting
-- Add password spraying module
-- HTML report generation
-- Integration with BloodHound
-- SMB share file searching
-
----
-
 ## Download
 
 **GitHub:** [github.com/jashidsany/win-enum](https://github.com/jashidsany/win-enum)
