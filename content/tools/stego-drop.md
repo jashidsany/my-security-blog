@@ -1,5 +1,5 @@
 ---
-title: "Building stego-drop: Hiding Shellcode in PNG Images with LSB Steganography"
+title: "Stego-Drop: Hiding Shellcode in PNG Images with LSB Steganography"
 date: 2026-02-24
 draft: false
 tags: ["steganography", "red-team", "python", "offensive-security", "malware-dev"]
