@@ -1,4 +1,11 @@
-# Building stego-drop: Hiding Shellcode in PNG Images with LSB Steganography
+---
+title: "Building stego-drop: Hiding Shellcode in PNG Images with LSB Steganography"
+date: 2026-02-24
+draft: false
+tags: ["steganography", "red-team", "python", "offensive-security", "malware-dev"]
+categories: ["Tools"]
+description: "A walkthrough of building stego-drop, a Python LSB steganography tool for embedding shellcode and binary payloads into PNG images."
+---
 
 Steganography is the practice of hiding data inside something that looks completely normal. Unlike encryption, which makes data unreadable, steganography makes data invisible. On a red team engagement, that distinction matters. Encrypted traffic gets flagged. A PNG image of a cat sitting on a keyboard? Nobody looks twice.
 
@@ -12,7 +19,7 @@ The full source is on my GitHub: [github.com/jashidsany/stego-drop](https://gith
 
 Every pixel in a PNG image stores color as three channels: Red, Green, and Blue. Each channel is an 8-bit value ranging from 0 to 255. That means each channel looks something like this in binary:
 
-```
+```bash
 Red:   10000110  (134)
 Green: 11001000  (200)
 Blue:  01001110  (78)
@@ -42,20 +49,20 @@ The output is a valid PNG image that looks identical to the original. But hidden
 
 Here's the core logic. Take a payload byte like `0xEB` (the first byte of a typical x86 JMP instruction):
 
-```
+```bash
 0xEB in binary: 11101011
 ```
 
 We need 8 pixel channel values to store this one byte (1 bit per channel). Say the first few pixel values are:
 
-```
+```bash
 Before:  134  200  78  45  190  222  100  88
 LSBs:      0    0   0   1    0    0    0   0
 ```
 
 We overwrite each LSB with our payload bits:
 
-```
+```bash
 Payload: 1    1   1   0    1    0    1   1
 After:  135  201  79  44  191  222  101  89
 ```
