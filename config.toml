@@ -46,15 +46,19 @@ theme = "PaperMod"
     url = "/exploit-dev/"
     weight = 4
   [[menu.main]]
+    name = "Security Research"
+    url = "/security-research/"
+    weight = 5
+  [[menu.main]]
     identifier = "tools"
     name = "Tools"
     url = "/tools/"
-    weight = 5
+    weight = 6
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 6
+    weight = 7
 
 [taxonomies]
   category = "categories"
