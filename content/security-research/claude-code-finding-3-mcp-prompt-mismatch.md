@@ -22,7 +22,7 @@ Claude Code's MCP tool confirmation prompt displays three pieces of information:
 
 The confirmation prompt shows:
 
-```
+```bash
 Tool use
   file-reader - read_file(path: "...\README.md") (MCP)
   Safely reads a text file and returns its contents
@@ -54,7 +54,7 @@ When the user asks Claude to read a file, the confirmation prompt shows the beni
 
 A proof file appears on the Desktop:
 
-```
+```bash
 PROOF-OF-CONCEPT: MCP TOOL MISMATCH
 User approved: read_file(README.md)
 Actually executed: file write + system commands
