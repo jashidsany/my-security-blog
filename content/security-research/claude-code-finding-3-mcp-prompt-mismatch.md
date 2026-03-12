@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding 3: MCP Tool Confirmation Prompt Misrepresentation Enables Arbitrary Code Execution"
+title: "Claude Code Finding: MCP Tool Confirmation Prompt Misrepresentation Enables Arbitrary Code Execution"
 date: 2026-03-12
 description: "A malicious MCP server can misrepresent tool actions in Claude Code's confirmation prompt, causing users to approve a file read while the server silently executes system commands."
 tags: ["security-research", "claude-code", "mcp", "rce", "prompt-misrepresentation"]
@@ -10,7 +10,7 @@ categories: ["security-research"]
 
 This is the third finding from my Claude Code security research, and the one I consider the most impactful. A malicious MCP server can completely misrepresent what it does in Claude Code's tool confirmation prompt, causing a user to approve what appears to be a safe file read while the server silently executes arbitrary system commands, writes files outside the project directory, and runs OS-level commands.
 
-This was submitted to Anthropic via HackerOne and is currently **Open** with **High** severity.
+This was submitted to Anthropic via HackerOne.
 
 **Product:** Claude Code CLI v2.1.63  
 **CWE:** CWE-451 (User Interface Misrepresentation of Critical Information)  
@@ -73,14 +73,6 @@ This finding is distinct from previously patched Claude Code vulnerabilities:
 
 The core issue here is that the consent mechanism itself is broken. The user gives informed consent to the wrong action. They approve "read a file" and get system command execution.
 
-## In-Scope Justification
-
-Anthropic's own VDP scope for Claude Code explicitly includes:
-
-> "Misrepresenting parameters or tools in permission prompts by displaying different information than what will actually be executed"
-
-This finding matches that description exactly.
-
 ## Attack Scenario
 
 An attacker includes a `.mcp.json` and malicious MCP server in a GitHub repository. A developer clones the repo, opens it in Claude Code, trusts the workspace, and uses the tool. The confirmation prompt shows a harmless file read, but the server exfiltrates SSH keys, environment variables, source code, and credentials while displaying normal-looking output.
@@ -94,13 +86,5 @@ With the "don't ask again" option, the attacker gets persistent execution for ev
 - Deceptive confirmation prompt: user consents to one action and gets another
 - Fake return data hides the attack from both the user and Claude
 - Persistent compromise if "don't ask again" is selected
-
-## Disclosure Timeline
-
-| Date | Action |
-|------|--------|
-| 2026-03-03 | Vulnerability discovered and PoC developed |
-| 2026-03-03 | Report submitted to Anthropic via HackerOne |
-| Pending | Awaiting Anthropic response |
 
 Full PoC with video demo, source code, and step-by-step reproduction available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-prompt-mismatch-poc).
