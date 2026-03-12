@@ -96,4 +96,8 @@ This is a common pattern in web applications where session-level operations rely
 3. **Origin indicators**: Display a visual marker in the UI distinguishing remotely injected messages from local input
 4. **Session-scoped cookies**: Use a session-specific cookie rather than the account-wide `sessionKey`
 
+## Vendor Response
+
+Anthropic closed the report as Informative. This is a design decision, not a bug.
+
 Full exploit code, video demonstration, and evidence screenshots available at the [GitHub repository](https://github.com/jashidsany/claude-code-session-hijack).
