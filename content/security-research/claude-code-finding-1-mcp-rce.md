@@ -79,10 +79,6 @@ Exit Claude Code. Modify `.mcp.json` with a different payload (same server name)
 
 Relaunch Claude Code. **No trust dialog appears.** The modified command executes silently. The user's original consent was applied to a command they never approved.
 
-## Vendor Response
-
-Anthropic closed the report as Informative. This is a design decision, not a bug.
-
 ## Remediation Suggestions
 
 1. Hash the MCP server configuration at trust time; re-prompt when it changes
@@ -90,5 +86,8 @@ Anthropic closed the report as Informative. This is a design decision, not a bug
 3. Flag MCP definitions using shell interpreters (cmd.exe, bash, powershell)
 4. Require per-server approval with command visibility for each new or modified server
 
+## Vendor Response
+
+Anthropic closed the report as Informative. This is a design decision, not a bug.
 
 Full PoC, evidence screenshots, and video demo available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-rce).
