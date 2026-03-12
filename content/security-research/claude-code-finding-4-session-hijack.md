@@ -28,7 +28,7 @@ This means that if an attacker obtains the `sessionKey` (via XSS, cookie theft, 
 
 ## Attack Flow
 
-```
+```bash
 Attacker (Kali)                          Victim (Windows)
      |                                        |
      |  1. Obtain sessionKey cookie           |
