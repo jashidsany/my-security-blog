@@ -57,10 +57,6 @@ The pattern of re-prompting when the trust surface changes is industry standard:
 
 Claude Code's blanket trust skips this entirely. A change in what is being trusted should trigger a new consent decision.
 
-## Vendor Response
-
-Anthropic closed the report as Informative. This is a design decision, not a bug.
-
 ## What I Would Fix
 
 I am not suggesting the blanket trust option should be removed. I am suggesting that:
@@ -70,5 +66,9 @@ I am not suggesting the blanket trust option should be removed. I am suggesting 
 3. A mechanism should exist to review and revoke trust for individual servers
 
 This would preserve the convenience of the feature while ensuring the user's consent remains informed.
+
+## Vendor Response
+
+Anthropic closed the report as Informative. This is a design decision, not a bug.
 
 Full PoC and evidence available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-trust-escalation).
