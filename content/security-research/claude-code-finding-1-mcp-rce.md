@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding 1: Silent Command Execution via .mcp.json Trust Model"
+title: "Claude Code Finding: Silent Command Execution via .mcp.json Trust Model"
 date: 2026-03-12
 description: "How a one-time trust decision in Claude Code enables silent arbitrary command execution when .mcp.json is modified after initial approval."
 tags: ["security-research", "claude-code", "mcp", "supply-chain", "rce"]
@@ -81,9 +81,7 @@ Relaunch Claude Code. **No trust dialog appears.** The modified command executes
 
 ## Vendor Response
 
-Anthropic closed the report as Informative, stating that users who trust a workspace are responsible for the integrity of its contents, including future changes. This is a design decision, not a bug.
-
-I pushed back noting that a one-time trust decision implicitly covering all future changes creates risk in collaborative environments where `.mcp.json` can be modified by other contributors via `git pull`.
+Anthropic closed the report as Informative. This is a design decision, not a bug.
 
 ## Remediation Suggestions
 
@@ -92,13 +90,5 @@ I pushed back noting that a one-time trust decision implicitly covering all futu
 3. Flag MCP definitions using shell interpreters (cmd.exe, bash, powershell)
 4. Require per-server approval with command visibility for each new or modified server
 
-## Disclosure Timeline
-
-| Date | Action |
-|------|--------|
-| 2026-02-28 | Vulnerability discovered and confirmed |
-| 2026-02-28 | Report submitted to Anthropic via HackerOne |
-| 2026-03-01 | Anthropic closes report as Informative |
-| 2026-03-01 | Research published |
 
 Full PoC, evidence screenshots, and video demo available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-rce).
