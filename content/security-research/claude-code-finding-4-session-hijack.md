@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding 4: Remote Control Session Hijacking via Missing Per-Session Authentication"
+title: "Claude Code Finding: Remote Control Session Hijacking via Missing Per-Session Authentication"
 date: 2026-03-12
 description: "The Claude Code remote-control session events endpoint lacks per-session authentication, enabling invisible remote command execution from any machine on the internet."
 tags: ["security-research", "claude-code", "session-hijacking", "authentication-bypass", "rce"]
@@ -95,13 +95,5 @@ This is a common pattern in web applications where session-level operations rely
 2. **Device binding**: Tie the session to the originating device fingerprint or IP
 3. **Origin indicators**: Display a visual marker in the UI distinguishing remotely injected messages from local input
 4. **Session-scoped cookies**: Use a session-specific cookie rather than the account-wide `sessionKey`
-
-## Disclosure Timeline
-
-| Date | Action |
-|------|--------|
-| 2026-03-02 | Vulnerability discovered and PoC developed |
-| 2026-03-02 | Report submitted to Anthropic via HackerOne |
-| Pending | Awaiting Anthropic response |
 
 Full exploit code, video demonstration, and evidence screenshots available at the [GitHub repository](https://github.com/jashidsany/claude-code-session-hijack).
