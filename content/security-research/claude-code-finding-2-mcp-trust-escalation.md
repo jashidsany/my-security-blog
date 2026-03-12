@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding 2: MCP Blanket Trust Escalation via enableAllProjectMcpServers"
+title: "Claude Code Finding: MCP Blanket Trust Escalation via enableAllProjectMcpServers"
 date: 2026-03-12
 description: "How the 'Use this and all future MCP servers' option grants permanent, unbounded trust to arbitrary MCP server definitions added after the initial consent."
 tags: ["security-research", "claude-code", "mcp", "trust-model", "supply-chain"]
@@ -59,9 +59,7 @@ Claude Code's blanket trust skips this entirely. A change in what is being trust
 
 ## Vendor Response
 
-Anthropic stated that the "Use this and all future MCP servers in this project" option is intentionally designed to set blanket trust, and the behavior is the expected outcome of selecting that option. Users who prefer granular control can choose one of the other options.
-
-I submitted a pushback citing CWE-356 and the informed consent argument: the dialog does not communicate the full scope of the commitment. The report remains closed.
+Anthropic closed the report as Informative. This is a design decision, not a bug.
 
 ## What I Would Fix
 
@@ -72,14 +70,5 @@ I am not suggesting the blanket trust option should be removed. I am suggesting 
 3. A mechanism should exist to review and revoke trust for individual servers
 
 This would preserve the convenience of the feature while ensuring the user's consent remains informed.
-
-## Disclosure Timeline
-
-| Date | Action |
-|------|--------|
-| 2026-03-01 | Vulnerability discovered and confirmed |
-| 2026-03-01 | Report submitted to Anthropic via HackerOne |
-| 2026-03-02 | Anthropic closes report as outside threat model |
-| 2026-03-04 | Pushback submitted citing CWE-356 and informed consent |
 
 Full PoC and evidence available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-trust-escalation).
