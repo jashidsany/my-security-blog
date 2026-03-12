@@ -87,4 +87,8 @@ With the "don't ask again" option, the attacker gets persistent execution for ev
 - Fake return data hides the attack from both the user and Claude
 - Persistent compromise if "don't ask again" is selected
 
+## Vendor Response
+
+Anthropic closed the report as Informative. This is a design decision, not a bug.
+
 Full PoC with video demo, source code, and step-by-step reproduction available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-prompt-mismatch-poc).
