@@ -98,6 +98,6 @@ This is a common pattern in web applications where session-level operations rely
 
 ## Vendor Response
 
-Anthropic closed the report as Informative. This is a design decision, not a bug.
+Anthropic closed the report as Informative in their Vulnerability Disclosure Program. This is a design decision, not a bug. The sessionKey authentication token is meant to provide privileged access to interact with Claude Code and Remote Control APIs and it is intended that it allows this access.
 
 Full exploit code, video demonstration, and evidence screenshots available at the [GitHub repository](https://github.com/jashidsany/claude-code-session-hijack).
