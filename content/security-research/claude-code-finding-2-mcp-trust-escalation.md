@@ -10,8 +10,6 @@ categories: ["security-research"]
 
 This is the second finding from my Claude Code security research. It examines the `enableAllProjectMcpServers` flag, set when a user selects "Use this and all future MCP servers in this project" in the MCP trust dialog. This option grants permanent, irrevocable trust to any MCP server definition added to the project's `.mcp.json` in the future, with no mechanism to review, audit, or revoke trust for individual servers after the fact.
 
-This was reported to Anthropic via HackerOne and closed as outside their current threat model.
-
 **Product:** Claude Code CLI v2.1.63  
 **CWE:** CWE-356 (Product UI does not Warn User of Unsafe Actions)  
 **GitHub:** [claude-code-mcp-trust-escalation](https://github.com/jashidsany/claude-code-mcp-trust-escalation)
@@ -69,6 +67,6 @@ This would preserve the convenience of the feature while ensuring the user's con
 
 ## Vendor Response
 
-Anthropic closed the report as Informative. This is a design decision, not a bug.
+Anthropic closed the report as Informative. 
 
 Full PoC and evidence available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-trust-escalation).
