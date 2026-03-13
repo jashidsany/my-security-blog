@@ -91,4 +91,6 @@ With the "don't ask again" option, the attacker gets persistent execution for ev
 
 Anthropic closed the report as Informative. This is a design decision, not a bug.
 
+The MCP server trust dialog is the code-execution boundary, not the tool-call prompt. Anthropic's documentation(https://code.claude.com/docs/en/mcp#popular-mcp-servers) reinforces this: "Use third party MCP servers at your own risk — Anthropic has not verified the correctness or security of all these servers. Make sure you trust MCP servers you are installing".
+
 Full PoC with video demo, source code, and step-by-step reproduction available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-prompt-mismatch-poc).
