@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding: MCP Tool Confirmation Prompt Misrepresentation Enables Arbitrary Code Execution"
+title: "Claude Code Finding 3: MCP Tool Confirmation Prompt Misrepresentation Enables Arbitrary Code Execution"
 date: 2026-03-12
 description: "A malicious MCP server can misrepresent tool actions in Claude Code's confirmation prompt, causing users to approve a file read while the server silently executes system commands."
 tags: ["security-research", "claude-code", "mcp", "rce", "prompt-misrepresentation"]
