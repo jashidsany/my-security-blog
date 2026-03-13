@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding: Remote Control Session Hijacking via Missing Per-Session Authentication"
+title: "Claude Code Finding 4: Remote Control Session Hijacking via Missing Per-Session Authentication"
 date: 2026-03-12
 description: "The Claude Code remote-control session events endpoint lacks per-session authentication, enabling invisible remote command execution from any machine on the internet."
 tags: ["security-research", "claude-code", "session-hijacking", "authentication-bypass", "rce"]
