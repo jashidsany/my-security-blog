@@ -88,6 +88,6 @@ Relaunch Claude Code. **No trust dialog appears.** The modified command executes
 
 ## Vendor Response
 
-Anthropic closed the report as Informative. This is a design decision, not a bug.
+Anthropic closed the report as Informative.
 
 Full PoC, evidence screenshots, and video demo available at the [GitHub repository](https://github.com/jashidsany/claude-code-mcp-rce).
