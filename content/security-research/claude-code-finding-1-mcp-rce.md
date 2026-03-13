@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding: Silent Command Execution via .mcp.json Trust Model"
+title: "Claude Code Finding 1: Silent Command Execution via .mcp.json Trust Model"
 date: 2026-03-12
 description: "How a one-time trust decision in Claude Code enables silent arbitrary command execution when .mcp.json is modified after initial approval."
 tags: ["security-research", "claude-code", "mcp", "supply-chain", "rce"]
