@@ -1,5 +1,5 @@
 ---
-title: "Claude Code Finding: MCP Blanket Trust Escalation via enableAllProjectMcpServers"
+title: "Claude Code Finding 2: MCP Blanket Trust Escalation via enableAllProjectMcpServers"
 date: 2026-03-12
 description: "How the 'Use this and all future MCP servers' option grants permanent, unbounded trust to arbitrary MCP server definitions added after the initial consent."
 tags: ["security-research", "claude-code", "mcp", "trust-model", "supply-chain"]
