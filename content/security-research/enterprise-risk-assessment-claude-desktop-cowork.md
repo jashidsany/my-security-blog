@@ -1,5 +1,5 @@
 ---
-title: "Enterprise Risk Assessment: Security Risks of Deploying Claude Desktop and Cowork in Regulated Environments"
+title: "Research Paper: Enterprise Risk Assessment - Security Risks of Deploying Claude Desktop and Cowork in Regulated Environments"
 date: 2026-03-14
 draft: false
 categories: ["security-research"]
