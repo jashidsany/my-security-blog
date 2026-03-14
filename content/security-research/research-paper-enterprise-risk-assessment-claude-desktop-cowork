@@ -1,7 +1,6 @@
 ---
 title: "Research Paper: Enterprise Risk Assessment - Security Risks of Deploying Claude Desktop and Cowork in Regulated Environments"
 date: 2026-03-14
-draft: false
 categories: ["security-research"]
 tags: ["security-research", "claude-desktop", "cowork", "enterprise-security", "risk-assessment", "prompt-injection", "agentic-ai", "hipaa", "gdpr", "pii"]
 summary: "A comprehensive security risk assessment for organizations considering deployment of Claude Desktop and Cowork, covering publicly disclosed vulnerabilities, independent research findings, regulatory compliance risks, and a defensive architecture for enterprise environments."
