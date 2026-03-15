@@ -1,19 +1,30 @@
 .profile {
   text-align: center;
-  padding: 20px 0 10px;
+  padding: 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile_inner img {
   border-radius: 50%;
   margin-bottom: 16px;
   border: 3px solid var(--tertiary);
-  width: 160px;
-  height: 160px;
+  width: 160px !important;
+  height: 160px !important;
   object-fit: cover;
 }
 
 .profile h1 {
   margin: 8px 0 4px;
+  text-align: center;
+  width: 100%;
 }
 
 .profile span {
@@ -23,6 +34,7 @@
   display: block;
   margin: 0 auto 16px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .buttons {
