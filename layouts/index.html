@@ -1,0 +1,65 @@
+{{- define "main" }}
+
+{{- if .Site.Params.profileMode.enabled }}
+<article>
+  <div class="profile">
+    {{- with .Site.Params.profileMode.imageUrl }}
+    <div class="profile_inner">
+      {{- if $.Site.Params.profileMode.imageTitle }}
+      <img draggable="false" src="{{ . | absURL }}" alt="{{ $.Site.Params.profileMode.imageTitle }}"
+        title="{{ $.Site.Params.profileMode.imageTitle }}"
+        height="{{ $.Site.Params.profileMode.imageHeight | default 120 }}"
+        width="{{ $.Site.Params.profileMode.imageWidth | default 120 }}" />
+      {{- else }}
+      <img draggable="false" src="{{ . | absURL }}" alt="profile"
+        height="{{ $.Site.Params.profileMode.imageHeight | default 120 }}"
+        width="{{ $.Site.Params.profileMode.imageWidth | default 120 }}" />
+      {{- end }}
+    </div>
+    {{- end }}
+    <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
+    <span>{{ .Site.Params.profileMode.subtitle }}</span>
+    {{- partial "social_icons.html" .Site.Params.socialIcons }}
+
+    {{- with .Site.Params.profileMode.buttons }}
+    <div class="buttons">
+      {{- range . }}
+      <a class="button" href="{{ .url | absURL }}" rel="noopener" title="{{ .name }}">
+        <span class="button-inner">{{ .name }}</span>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+
+  <div class="recent-posts">
+    <h2 class="recent-posts-heading">Latest Posts</h2>
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{- $paginator := .Paginate ($pages.ByDate.Reverse) 5 }}
+    {{- range $paginator.Pages }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+      </header>
+      {{- if .Description }}
+      <section class="entry-content">
+        <p>{{ .Description }}</p>
+      </section>
+      {{- else if .Summary }}
+      <section class="entry-content">
+        <p>{{ .Summary | plainify | truncate 200 }}</p>
+      </section>
+      {{- end }}
+      <footer class="entry-footer">
+        <span>{{ .Date.Format "January 2, 2006" }}</span>&nbsp;·&nbsp;<span>{{ .ReadingTime }} min</span>
+      </footer>
+    </article>
+    {{- end }}
+  </div>
+
+</article>
+{{- end }}
+
+{{- end }}{{/* end main */}}
