@@ -1,82 +1,62 @@
+/* === Color scheme: true black + coral red === */
 :root {
-  --theme: #0a0a0a;
-  --entry: #141414;
-  --primary: #e0e0e0;
-  --secondary: #999999;
-  --tertiary: #1a1a1a;
-  --content: #d4d4d4;
-  --code-bg: #141414;
-  --border: #1a1a1a;
+  --theme: #000000;
+  --entry: #0d0d0d;
+  --primary: #f0f0f0;
+  --secondary: #8a8a8a;
+  --tertiary: #161616;
+  --content: #d9d9d9;
+  --code-bg: #0d0d0d;
+  --border: #161616;
+  --accent: #e85044;
+  --accent-hover: #f06a5e;
 }
 
 .dark {
-  --theme: #0a0a0a;
-  --entry: #141414;
-  --primary: #e0e0e0;
-  --secondary: #999999;
-  --tertiary: #1a1a1a;
-  --content: #d4d4d4;
-  --code-bg: #141414;
-  --border: #1a1a1a;
+  --theme: #000000;
+  --entry: #0d0d0d;
+  --primary: #f0f0f0;
+  --secondary: #8a8a8a;
+  --tertiary: #161616;
+  --content: #d9d9d9;
+  --code-bg: #0d0d0d;
+  --border: #161616;
+  --accent: #e85044;
+  --accent-hover: #f06a5e;
 }
 
-/* Red accents */
+body {
+  background: #000000;
+}
+
+/* Links */
 a {
-  color: #cc2936;
+  color: var(--accent);
 }
 
 a:hover {
-  color: #ff3344;
+  color: var(--accent-hover);
 }
 
-.profile_inner img {
-  border-color: #cc2936 !important;
+/* Nav */
+.nav {
+  background: #000000;
 }
 
-.button {
-  background: #cc2936 !important;
-  color: #e0e0e0 !important;
+#menu a {
+  color: var(--secondary);
 }
 
-.button:hover {
-  background: #ff3344 !important;
-  color: #ffffff !important;
-}
-
-.recent-posts-heading {
-  border-bottom-color: #cc2936 !important;
-}
-
-.recent-posts .post-entry {
-  border-left: 3px solid #cc2936;
-}
-
-.recent-posts .post-entry:hover {
-  border-left-color: #ff3344;
-}
-
+#menu a:hover,
 #menu a.active {
-  color: #cc2936;
+  color: var(--accent);
 }
 
-.post-entry:hover {
-  border-color: #cc2936;
+.logo a {
+  color: var(--primary) !important;
 }
 
-code {
-  background: #1a1a1a;
-  color: #cc2936;
-}
-
-.pagination .page-link {
-  color: #cc2936;
-}
-
-#searchResults mark {
-  background: #cc293640;
-  color: #ff3344;
-}
-
+/* Profile */
 .profile {
   text-align: center;
   padding: 40px 0 10px;
@@ -94,7 +74,7 @@ code {
 .profile_inner img {
   border-radius: 50%;
   margin-bottom: 16px;
-  border: 3px solid var(--tertiary);
+  border: 2px solid #222222;
   width: 160px !important;
   height: 160px !important;
   object-fit: cover;
@@ -104,6 +84,8 @@ code {
   margin: 8px 0 4px;
   text-align: center;
   width: 100%;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .profile span {
@@ -112,45 +94,57 @@ code {
   max-width: 560px;
   display: block;
   margin: 0 auto 16px;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
 }
 
+/* Buttons: outlined style like Advent */
 .buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 12px;
+  margin-top: 16px;
 }
 
 .button {
-  background: var(--tertiary);
-  color: var(--primary);
-  padding: 8px 20px;
-  border-radius: 6px;
+  background: transparent !important;
+  color: var(--accent) !important;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent);
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button:hover {
-  background: var(--secondary);
-  color: var(--theme);
+  background: var(--accent) !important;
+  color: #000000 !important;
 }
 
+/* Social icons */
+.social-icons a {
+  color: var(--secondary);
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+/* Latest posts section */
 .recent-posts {
   max-width: 800px;
-  margin: 40px auto 0;
+  margin: 50px auto 0;
   padding: 0 20px;
 }
 
 .recent-posts-heading {
   font-size: 1.3rem;
-  margin-bottom: 20px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--tertiary);
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1a1a1a !important;
   color: var(--primary);
 }
 
@@ -159,11 +153,13 @@ code {
   border-radius: 8px;
   padding: 20px 24px;
   margin-bottom: 14px;
-  transition: transform 0.2s ease;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
 }
 
 .recent-posts .post-entry:hover {
   transform: translateY(-2px);
+  border-left-color: var(--accent);
 }
 
 .recent-posts .entry-header h2 {
@@ -178,7 +174,7 @@ code {
 }
 
 .recent-posts .entry-header h2 a:hover {
-  color: var(--secondary);
+  color: var(--accent);
 }
 
 .recent-posts .entry-content p {
@@ -191,5 +187,61 @@ code {
 .recent-posts .entry-footer {
   color: var(--secondary);
   font-size: 0.8rem;
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+/* Post list pages */
+.post-entry {
+  background: var(--entry);
+  border: 1px solid #141414;
+}
+
+.post-entry:hover {
+  border-color: var(--accent);
+}
+
+/* Inline code */
+code {
+  background: #111111;
+  color: var(--accent);
+}
+
+/* Code blocks */
+.highlight {
+  background: #0a0a0a !important;
+  border-radius: 8px;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: var(--accent);
+}
+
+/* Search highlight */
+#searchResults mark {
+  background: rgba(232, 80, 68, 0.2);
+  color: var(--accent-hover);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Footer */
+.footer {
+  color: var(--secondary);
+  opacity: 0.5;
+}
+
+.footer a {
+  color: var(--secondary);
+}
+
+.footer a:hover {
+  color: var(--accent);
 }
