@@ -313,6 +313,19 @@ code {
   background: #141414;
 }
 
+/* Force consistent background everywhere */
+body,
+.main,
+.post-single,
+.post-content,
+article {
+  background: #000000 !important;
+}
+
+.header {
+  background: #000000;
+}
+
 .dropdown-menu li a.active {
   color: var(--accent);
 }
