@@ -66,16 +66,16 @@ theme = "PaperMod"
     url = "/security-research/ai-security/"
     parent = "research"
     weight = 2
-  [[menu.main]]
+   [[menu.main]]
     identifier = "malwaredev"
     name = "Malware Dev"
-    url = "/malware-dev/"
+    url = "/security-research/malware-dev/"
     parent = "research"
     weight = 3
   [[menu.main]]
     identifier = "exploitdev"
     name = "Exploit Dev"
-    url = "/exploit-dev/"
+    url = "/security-research/exploit-dev/"
     parent = "research"
     weight = 4
   [[menu.main]]
