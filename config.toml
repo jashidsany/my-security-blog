@@ -59,7 +59,11 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 7
-
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 8
 [taxonomies]
   category = "categories"
   tag = "tags"
