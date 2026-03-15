@@ -183,4 +183,4 @@ Full zero-click exfiltration chain in Turbo mode, from prompt to webhook capture
 
 The full proof of concept, including the injection payload, credential staging scripts, exfiltration capture tools, screenshots, and video recordings, is available at:
 
-[github.com/jashidsany/windsurf-indirect-prompt-injection](https://github.com/jashidsany/windsurf-indirect-prompt-injection)
+[github.com/jashidsany/windsurf-indirect-prompt-injection](https://github.com/jashidsany/windsurf-indirect-prompt-injection-data-exfil)
