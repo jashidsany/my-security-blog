@@ -1,3 +1,82 @@
+:root {
+  --theme: #0a0a0a;
+  --entry: #141414;
+  --primary: #e0e0e0;
+  --secondary: #999999;
+  --tertiary: #1a1a1a;
+  --content: #d4d4d4;
+  --code-bg: #141414;
+  --border: #1a1a1a;
+}
+
+.dark {
+  --theme: #0a0a0a;
+  --entry: #141414;
+  --primary: #e0e0e0;
+  --secondary: #999999;
+  --tertiary: #1a1a1a;
+  --content: #d4d4d4;
+  --code-bg: #141414;
+  --border: #1a1a1a;
+}
+
+/* Red accents */
+a {
+  color: #cc2936;
+}
+
+a:hover {
+  color: #ff3344;
+}
+
+.profile_inner img {
+  border-color: #cc2936 !important;
+}
+
+.button {
+  background: #cc2936 !important;
+  color: #e0e0e0 !important;
+}
+
+.button:hover {
+  background: #ff3344 !important;
+  color: #ffffff !important;
+}
+
+.recent-posts-heading {
+  border-bottom-color: #cc2936 !important;
+}
+
+.recent-posts .post-entry {
+  border-left: 3px solid #cc2936;
+}
+
+.recent-posts .post-entry:hover {
+  border-left-color: #ff3344;
+}
+
+#menu a.active {
+  color: #cc2936;
+}
+
+.post-entry:hover {
+  border-color: #cc2936;
+}
+
+code {
+  background: #1a1a1a;
+  color: #cc2936;
+}
+
+.pagination .page-link {
+  color: #cc2936;
+}
+
+#searchResults mark {
+  background: #cc293640;
+  color: #ff3344;
+}
+
 .profile {
   text-align: center;
   padding: 40px 0 10px;
