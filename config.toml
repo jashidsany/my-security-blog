@@ -50,35 +50,49 @@ theme = "PaperMod"
     url = "/hackthebox/"
     weight = 2
   [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/security-research/"
+    weight = 3
+  [[menu.main]]
+    identifier = "research-papers"
+    name = "Research Papers"
+    url = "/security-research/papers/"
+    parent = "research"
+    weight = 1
+  [[menu.main]]
+    identifier = "ai-security"
+    name = "AI Security Research"
+    url = "/security-research/ai-security/"
+    parent = "research"
+    weight = 2
+  [[menu.main]]
     identifier = "malwaredev"
     name = "Malware Dev"
     url = "/malware-dev/"
+    parent = "research"
     weight = 3
   [[menu.main]]
     identifier = "exploitdev"
     name = "Exploit Dev"
     url = "/exploit-dev/"
+    parent = "research"
     weight = 4
-  [[menu.main]]
-    identifier = "securityresearch"
-    name = "Security Research"
-    url = "/security-research/"
-    weight = 5
   [[menu.main]]
     identifier = "tools"
     name = "Tools"
     url = "/tools/"
-    weight = 6
+    weight = 4
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 7
+    weight = 5
   [[menu.main]]
     identifier = "search"
     name = "Search"
     url = "/search/"
-    weight = 8
+    weight = 6
 
 [taxonomies]
   category = "categories"
