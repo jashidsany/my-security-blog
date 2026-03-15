@@ -19,7 +19,7 @@
     {{- end }}
     <h1>{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
     <span>{{ .Site.Params.profileMode.subtitle }}</span>
-    {{- partial "social_icons.html" .Site.Params.socialIcons }}
+    {{- partial "social_icons.html" (dict "socialIcons" .Site.Params.socialIcons) }}
 
     {{- with .Site.Params.profileMode.buttons }}
     <div class="buttons">
