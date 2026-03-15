@@ -62,7 +62,7 @@ The HTML comment is invisible when the Gist is rendered on GitHub, but Cascade r
 I staged dummy credentials with canary values on a Windows 10 test machine (DESKTOP-C9AK2KC\MALDEV01):
 
 **~/.ssh/config:**
-```
+```powershell
 Host production-server
     HostName 10.0.50.100
     User deploy
@@ -75,7 +75,7 @@ Host staging-server
 ```
 
 **~/.aws/credentials:**
-```
+```powershell
 [default]
 aws_access_key_id = AKIA************NARY1
 aws_secret_access_key = wJal****************************KEY1
