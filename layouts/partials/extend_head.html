@@ -1,7 +1,8 @@
 <style>
   .nav, .header, .header nav, #menu { overflow: visible !important; }
   #menu > li { position: relative; }
-  .dropdown-menu {
+
+  #menu > li.dropdown > ul.dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -15,8 +16,9 @@
     list-style: none;
     margin: 0;
     text-align: left !important;
+    transform: none !important;
   }
-  /* Invisible bridge so mouse doesn't lose hover crossing the gap */
+
   li.dropdown::after {
     content: "";
     position: absolute;
@@ -27,22 +29,34 @@
     display: none;
   }
   li.dropdown.open::after { display: block; }
-  .dropdown-menu.show { display: block; }
-  .dropdown-menu li { display: block; margin: 0; padding: 0; text-align: left !important; }
-  .dropdown-menu li a {
-    display: block;
-    padding: 6px 16px;
+
+  #menu > li.dropdown > ul.dropdown-menu.show { display: block !important; }
+
+  #menu > li.dropdown > ul.dropdown-menu > li {
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    list-style: none !important;
+  }
+
+  #menu > li.dropdown > ul.dropdown-menu > li > a {
+    display: block !important;
+    padding: 6px 16px !important;
     text-align: left !important;
     color: #8a8a8a !important;
-    font-size: 0.85rem;
-    text-decoration: none;
-    white-space: nowrap;
-    line-height: 1.4;
+    font-size: 0.85rem !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
   }
-  .dropdown-menu li a:hover {
+
+  #menu > li.dropdown > ul.dropdown-menu > li > a:hover {
     color: #e85044 !important;
-    background: #141414;
+    background: #141414 !important;
   }
+
   .dropdown-arrow { transition: transform 0.2s ease; }
   .dropdown-arrow.rotated { transform: rotate(180deg); }
 </style>
@@ -53,16 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var menu = dd.querySelector('.dropdown-menu');
     var arrow = dd.querySelector('.dropdown-arrow');
     if (!menu) return;
-
     var timeout;
-
     dd.addEventListener('mouseenter', function() {
       clearTimeout(timeout);
       dd.classList.add('open');
       menu.classList.add('show');
       if (arrow) arrow.classList.add('rotated');
     });
-
     dd.addEventListener('mouseleave', function() {
       timeout = setTimeout(function() {
         dd.classList.remove('open');
