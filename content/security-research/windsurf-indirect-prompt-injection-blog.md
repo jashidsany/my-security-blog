@@ -1,5 +1,5 @@
 ---
-title: "Windsurf Cascade: Indirect Prompt Injection and Credential Exfiltration via External Content"
+title: "Windsurf Cascade: Indirect Prompt Injection and Credential Exfiltration via Github Gists"
 date: 2026-03-15
 category: "security-research"
 tags:
