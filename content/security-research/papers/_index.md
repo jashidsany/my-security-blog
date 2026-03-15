@@ -1,6 +1,4 @@
 ---
 title: "Research Papers"
+layout: "list"
 ---
-```
-```
-content/security-research/ai-security/_index.md
